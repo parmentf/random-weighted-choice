@@ -51,7 +51,7 @@ With a temperature value of 0, modified weights are:
 
     { item1: 0, item2: 0, item3: 8, item4: 2, item5: 2 }
 
-## Function
+## Usage
 
 ### random-weighted-choice(Array table, integer temperature = 50)
 
