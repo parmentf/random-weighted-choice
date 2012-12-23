@@ -2,6 +2,7 @@
 
 Node.js module to make a random choice among weighted elements of table.
 
+
 ## Examples
 
 Although you can add several times the same id
@@ -43,3 +44,14 @@ With a temperature value of 100:
 With a temperature value of 0, modified weights are:
 
     { item1: 0, item2: 0, item3: 8, item4: 2, item5: 2 }
+
+## Function
+
+### random-weighted-choice(Array table, integer temperature = 50)
+
+Return the ``id`` of the chosen item from the ``table``.
+
+The ``table`` parameter should contain an Array. Each item of that Array must
+bean object, with at least ``weight`` and ``id`` property.
+
+Weight values are relative to each other.
