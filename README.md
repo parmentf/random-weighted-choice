@@ -61,3 +61,7 @@ The ``table`` parameter should contain an Array. Each item of that Array must
 bean object, with at least ``weight`` and ``id`` property.
 
 Weight values are relative to each other.
+
+## Also
+
+* https://github.com/Schoonology/weighted
