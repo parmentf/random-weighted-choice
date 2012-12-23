@@ -2,6 +2,12 @@
 
 Node.js module to make a random choice among weighted elements of table.
 
+## Installation
+
+With [npm](http://npmjs.org) do:
+
+    $ npm install random-weighted-choice
+
 
 ## Examples
 
@@ -49,7 +55,7 @@ With a temperature value of 0, modified weights are:
 
 ### random-weighted-choice(Array table, integer temperature = 50)
 
-Return the ``id`` of the chosen item from the ``table``.
+Return the ``id`` of the chosen item from ``table``.
 
 The ``table`` parameter should contain an Array. Each item of that Array must
 bean object, with at least ``weight`` and ``id`` property.
