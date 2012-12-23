@@ -62,7 +62,11 @@ Return the ``id`` of the chosen item from ``table``.
 The ``table`` parameter should contain an Array. Each item of that Array must
 bean object, with at least ``weight`` and ``id`` property.
 
-Weight values are relative to each other.
+Weight values are relative to each other. They are integers.
+
+When the sum of the weight values is ``null``, ``null`` is returned (can't choose).
+
+When the Array is empty, ``null`` is returned.
 
 More explanations on how it works on [Everything2](http://everything2.com/title/Blackboard+temperature).
 

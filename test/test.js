@@ -57,4 +57,10 @@ describe('One element', function () {
   });
 });
 
+describe('No weight', function () {
+  it('should return null', function () {
+    assert.equal(null, rwc([{weight:0, id: 'a'}]));
+  });
+});
+
 module.exports.random = randomMock;
