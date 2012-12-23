@@ -62,6 +62,8 @@ bean object, with at least ``weight`` and ``id`` property.
 
 Weight values are relative to each other.
 
+More explanations on how it works on [Everything2](http://everything2.com/title/Blackboard+temperature).
+
 ## Also
 
 * https://github.com/Schoonology/weighted
