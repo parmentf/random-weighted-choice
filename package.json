@@ -1,6 +1,6 @@
 {
   "name": "random-weighted-choice",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "node": "*"
   },
@@ -15,7 +15,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "homepage": "http://github.com/parmentf/random-weighted-choice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parmentf/random-weighted-choice.git"
+  },
   "keywords": [
     "random"
   ],
