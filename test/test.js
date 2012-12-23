@@ -50,4 +50,11 @@ describe('Empty table', function () {
   });
 });
 
+
+describe('One element', function () {
+  it('should return the element', function () {
+    assert.equal('a', rwc([{weight:1, id: 'a'}]));
+  });
+});
+
 module.exports.random = randomMock;
