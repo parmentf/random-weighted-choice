@@ -53,7 +53,7 @@ With a temperature value of 0, modified weights are:
 
 ## Usage
 
-### random-weighted-choice(Array table, integer temperature = 50)
+### random-weighted-choice(Array table, Number temperature = 50)
 
 Return the ``id`` of the chosen item from ``table``.
 
