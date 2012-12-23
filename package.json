@@ -1,0 +1,23 @@
+{
+  "name": "random-weighted-choice",
+  "version": "0.0.1",
+  "engines": {
+    "node": "*"
+  },
+  "author": "François Parmentier",
+  "main": "lib/random-weighted-choice.js",
+  "readmeFilename": "README.md",
+  "description": "Node.js module to make a random choice among weighted elements of table.",
+  "dependencies": {
+    "debug": "0.7.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "random"
+  ],
+  "license": "BSD"
+}

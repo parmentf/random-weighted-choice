@@ -1,0 +1,45 @@
+# Random Weighted Choice
+
+Node.js module to make a random choice among weighted elements of table.
+
+## Examples
+
+Although you can add several times the same id
+
+    var rwc = require('random-weighted-choice');
+    var table = [
+        { weight: 1, id: "item1"} // Element 1
+      , { weight: 1, id: "item2"} // Element 2
+      , { weight: 4, id: "item3"} // Element with a 4 times likelihood
+      , { weight: 2, id: "item1"} // Element 1, weight added with 2 => 3
+    ];
+    var choosenItem = rwc(table);
+    var choosenUnlikely = rwc(table, 100); // The last shall be first
+    var choosenDeterministically = rwc(table, 0);
+
+It is better to not use the same twice, if you want a temperature other than
+the default one (50).
+
+    var rwc = require('random-weighted-choice');
+    var table = [
+        { weight: 1, id: "item1"} // Element 1
+      , { weight: 1, id: "item2"} // Element 2
+      , { weight: 4, id: "item3"} // Element with a 4 times likelihood
+      , { weight: 2, id: "item4"} // Element 4
+      , { weight: 2, id: "item5"}
+    ];
+    var choosenItem = rwc(table);
+    var choosenUnlikely = rwc(table, 100); // The last shall be first
+    var choosenDeterministically = rwc(table, 0);
+
+Without temperature (second parameter) or a 50 value, likelihoods are:
+
+    { item1: 10%, item2: 10%, item3: 40%, item4: 20%, item5: 20% }
+
+With a temperature value of 100:
+
+    { item1: 30%, item2: 30%, item3: 0%, item4: 20%, item5: 20% }
+
+With a temperature value of 0, modified weights are:
+
+    { item1: 0, item2: 0, item3: 8, item4: 2, item5: 2 }
