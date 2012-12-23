@@ -1,4 +1,5 @@
 /*jshint node:true, laxcomma:true */
+/*global describe:true, it:true */
 "use strict";
 
 var debug = require('debug')('rwc:test');
@@ -24,7 +25,7 @@ describe('Temperature 50', function () {
       , { weight: 2, id: "item4"} // Element 4
       , { weight: 2, id: "item5"}
     ];
-  
+
   it('should return "item1"', function (){
     assert.equal('item1', rwc(table,null,randomMock));
   });
@@ -39,6 +40,13 @@ describe('Temperature 50', function () {
   });
   it('should return "item5"', function (){
     assert.equal('item5', rwc(table,null,randomMock));
+  });
+});
+
+
+describe('Empty table', function () {
+  it('should return null', function () {
+    assert.equal(null, rwc([]));
   });
 });
 
