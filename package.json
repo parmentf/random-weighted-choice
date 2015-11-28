@@ -9,13 +9,14 @@
   "readmeFilename": "README.md",
   "description": "Node.js module to make a random choice among weighted elements of table.",
   "dependencies": {
-    "debug": "0.7.x"
+    "debug": "^2.2.0"
   },
   "devDependencies": {
     "mocha": "1.7.x"
   },
   "scripts": {
-    "test": "make test"
+    "test": "mocha",
+    "test-w": "mocha --growl --watch"
   },
   "homepage": "http://github.com/parmentf/random-weighted-choice",
   "repository": {
