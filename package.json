@@ -12,7 +12,7 @@
     "debug": "^2.2.0"
   },
   "devDependencies": {
-    "mocha": "1.7.x"
+    "mocha": "^2.3.4"
   },
   "scripts": {
     "test": "mocha",
