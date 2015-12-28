@@ -10,4 +10,4 @@ cache:
 script:
   - npm test
 after_success:
-  -npm run coverage-report
+  - npm run coverage-report
