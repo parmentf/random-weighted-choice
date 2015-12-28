@@ -1,7 +1,7 @@
 # Random Weighted Choice
 
 [![Build Status](https://secure.travis-ci.org/parmentf/random-weighted-choice.png?branch=master)](http://travis-ci.org/parmentf/random-weighted-choice)
-[[Code Coverage](https://img.shields.io/codecov/c/github/parmentf/random-weighted-choice.svg)](https://codecov.io/github/parmentf/random-weighted-choice)
+[![Code Coverage](https://img.shields.io/codecov/c/github/parmentf/random-weighted-choice.svg)](https://codecov.io/github/parmentf/random-weighted-choice)
 Node.js module to make a random choice among weighted elements of table.
 
 ## Installation
