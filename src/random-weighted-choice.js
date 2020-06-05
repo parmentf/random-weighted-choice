@@ -34,7 +34,7 @@ const randomWeightedChoice = (
     cumulatedUrgencies[id] = currentUrgency;
   });
 
-  if (urgencySum < 1) return null; // No weight given
+  if (urgencySum <= 0) return null; // No weight given
   // Choose
   const choice = randomFunction() * urgencySum;
   const ids = Object.keys(cumulatedUrgencies);
